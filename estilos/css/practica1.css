@@ -145,3 +145,47 @@ nav div:hover {
     flex-direction: column;
     gap: 5px;
 }
+
+.contenedor_main1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor_main1_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor_promocion {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contenedor_promocion h2 {
+    font-size: 1.9em;
+}
+
+.contenedor_promocion p {
+    font-size: 1.4em;
+}
+
+.contenedor_promocion button {
+    width: 30%;
+    align-self: center;
+    padding: 10px 12px;
+    border-radius: 30px;
+    background-color: var(--bg-primary);
+    font-size: 1.01em;
+    cursor: pointer;
+}
+.contenedor_main1_1 video {
+    border: 3px solid var(--bg-primary);
+    border-radius: 14px;
+    width: 60%;
+    height: 90%;
+    object-fit: cover;
+}

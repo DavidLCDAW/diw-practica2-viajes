@@ -140,6 +140,11 @@ nav div:hover {
     gap: 20px;
 }
 
+.sidebar li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .contenedor_lugares {
     display: flex;
     flex-direction: column;

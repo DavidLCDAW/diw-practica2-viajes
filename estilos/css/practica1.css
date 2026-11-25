@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 :root {
-    --bg-primary: #68c0b2;
-    --bg-secondary: lightgray;
+    --color-primary: #68c0b2;
+    --color-secondary: lightgray;
+    --color-accent: #ff0000;
     --text-secondary: #808080;
+
+    --color-background: #f8f8f8;
+    --color-surface: #fff;
 }
 
 * {
@@ -22,11 +26,12 @@ img {
 .contenedor_grid {
     display: grid;
     grid-template-columns: 250px 1fr;
-    grid-template-rows: auto auto 1fr;
+    grid-template-rows: auto auto auto 1fr;
 
     grid-template-areas:
         "header header"
         "sidebar main"
+        "main2 main2"
         "footer footer";
 
     height: 100vh;
@@ -44,6 +49,11 @@ aside {
 
 main {
     grid-area: main;
+    background-color: var(--color-background);
+}
+
+.contenedor_main2 {
+    grid-area: main2;
 }
 
 footer {
@@ -59,7 +69,7 @@ footer {
 
 .contenedor_header {
     height: 80%;
-    background-color: var(--bg-primary);
+    background-color: var(--color-primary);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -107,7 +117,7 @@ nav div:hover {
 }
 
 .menu_idiomas {
-    border: 2px solid var(--bg-primary);
+    border: 2px solid var(--color-primary);
     display: none;
     position: absolute;
     top: 100%;
@@ -129,12 +139,12 @@ nav div:hover {
 }
 
 .opcion_idioma:hover {
-    background-color: var(--bg-primary);
+    background-color: var(--color-primary);
 }
 
 .sidebar {
     padding: 20px 0;
-    background-color: var(--bg-secondary);
+    background-color: var(--color-secondary);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -187,13 +197,13 @@ nav div:hover {
     align-self: center;
     padding: 10px 12px;
     border-radius: 30px;
-    background-color: var(--bg-primary);
+    background-color: var(--color-primary);
     font-size: 1.01em;
     cursor: pointer;
 }
 
 .contenedor_main1_1 video {
-    border: 5px solid var(--bg-primary);
+    border: 5px solid var(--color-primary);
     border-radius: 14px;
     width: 80%;
     height: 90%;
@@ -203,7 +213,7 @@ nav div:hover {
 .contenedor_main1_2 {
     display: flex;
     flex-direction: column;
-    background-color: var(--bg-secondary);
+    background-color: var(--color-secondary);
     gap: 10px;
     width: 95%;
     padding: 20px;
@@ -255,10 +265,100 @@ select {
 }
 
 .boton_formulario {
-    background-color: var(--bg-primary);
+    background-color: var(--color-primary);
     padding: 0 20px;
     border-radius: 20px;
     height: 70%;
     align-self: end;
     cursor: pointer;
+}
+
+.contenedor_main2 h2 {
+    background-color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contenedor_main2_1 {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: end;
+    row-gap: 30px;
+    column-gap: 50px;
+    margin-right: 12px;
+    background-image: url("../multimedia/fondo_main.jpg");
+    background-size: contain;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--color-surface);
+    border: 1px solid gray;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contenido_tarjeta {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.contenido_tarjeta img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+
+.contenido_tarjeta h3 {
+    font-size: 1.3em;
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.detalles {
+    color: var(--text-secondary);
+    font-size: 0.8em;
+    padding-left: 14px;
+}
+
+.oferta {
+    color: var(--color-accent);
+    font-weight: 700;
+    text-align: center;
+}
+
+.flash {
+    font-weight: 700;
+    text-align: end;
+}
+
+.precio_antiguo {
+    display: block;
+    text-align: end;
+    color: var(--text-secondary);
+    font-size: 0.8em;
+    text-decoration: line-through;
+}
+
+.precio_nuevo {
+    background-color: var(--color-primary);
+    margin-top: auto;
+    align-self: end;
+    display: flex;
+    align-items: center;
+    border-start-start-radius: 10px;
+}
+
+.precio_nuevo p {
+    padding: 8px;
+    font-size: 0.9em;
+}
+.precio_nuevo button {
+    height: 100%;
+    background-color: var(--color-primary);
+    border: 0;
+    border-left: 1px solid white;
 }

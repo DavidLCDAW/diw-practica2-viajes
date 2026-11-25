@@ -35,6 +35,7 @@ img {
 header {
     grid-area: header;
     width: 100%;
+    height: 130px;
 }
 
 aside {
@@ -51,10 +52,13 @@ footer {
 
 .eslogan {
     text-align: center;
-    background: yellowgreen;
+    background: linear-gradient(110deg, lightgreen, yellow);
+    height: 20%;
+    font-weight: bold;
 }
 
 .contenedor_header {
+    height: 80%;
     background-color: var(--bg-primary);
     display: flex;
     padding: 10px 0;
@@ -66,7 +70,7 @@ footer {
     height: 100%;
     width: auto;
     border-radius: 100%;
-    max-width: 120px;*/
+    max-width: 120px;
     object-fit: contain;
 }
 
@@ -78,6 +82,11 @@ nav {
 nav div {
     display: flex;
     gap: 15px;
+}
+
+nav div:hover {
+    color: white;
+    border-bottom: 1px solid white;
 }
 
 .idioma {

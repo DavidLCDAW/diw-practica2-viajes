@@ -174,7 +174,7 @@ nav div:hover {
 }
 
 .contenedor_promocion button {
-    width: 30%;
+    width: 20%;
     align-self: center;
     padding: 10px 12px;
     border-radius: 30px;
@@ -182,10 +182,11 @@ nav div:hover {
     font-size: 1.01em;
     cursor: pointer;
 }
+
 .contenedor_main1_1 video {
-    border: 3px solid var(--bg-primary);
+    border: 5px solid var(--bg-primary);
     border-radius: 14px;
-    width: 60%;
+    width: 80%;
     height: 90%;
     object-fit: cover;
 }

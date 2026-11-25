@@ -2,6 +2,7 @@
 
 :root {
     --bg-primary: #68c0b2;
+    --bg-secondary: lightgray;
 }
 
 * {
@@ -27,9 +28,7 @@ img {
         "sidebar main"
         "footer footer";
 
-    /*min-height: 100vh;*/
     height: 100vh;
-    gap: 20px;
 }
 
 header {
@@ -129,4 +128,19 @@ nav div:hover {
 
 .opcion_idioma:hover {
     background-color: var(--bg-primary);
+}
+
+.sidebar {
+    padding: 20px 0;
+    background-color: var(--bg-secondary);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contenedor_lugares {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }

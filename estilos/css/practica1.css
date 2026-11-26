@@ -84,6 +84,7 @@ nav {
 
 nav div {
     display: flex;
+    align-items: center;
     gap: 15px;
 }
 
@@ -168,6 +169,7 @@ nav div:hover {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 100%;
 }
 
 .contenedor_promocion {
@@ -281,7 +283,7 @@ select {
     column-gap: 50px;
     margin-right: 12px;
     background-image: url("../multimedia/fondo_main.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -401,4 +403,50 @@ footer {
 
 .footer_bottom {
     text-align: center;
+}
+
+@media (max-width: 1300px) {
+    .contenedor_main1_1 video {
+        display: none;
+    }
+
+    nav {
+        gap: 8px;
+    }
+
+    nav div {
+        gap: 1px;
+    }
+
+    .contenedor_main1_2 {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .tabs {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+
+    .tab {
+        display: flex;
+        justify-content: center;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .formulario button {
+        padding: 10px 18px;
+        align-self: center;
+    }
+
+    .contenedor_main2_1 {
+        grid-template-columns: repeat(2, 250px);
+    }
 }

@@ -288,6 +288,7 @@ select {
     margin-right: 12px;
     background-image: url("../multimedia/fondo_main.jpg");
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .tarjeta {

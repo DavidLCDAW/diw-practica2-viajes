@@ -469,3 +469,21 @@ footer {
         display: none;
     }
 }
+
+@media (max-width: 800px) {
+    nav div:not(.inicio_sesion),
+    .idioma {
+        display: none;
+    }
+
+    .contenedor_main2_1 {
+        grid-template-columns: 90%;
+        background-image: none;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .contenedor_footer {
+        grid-template-columns: repeat(4, 130px);
+    }
+}
